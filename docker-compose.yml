@@ -1,0 +1,15 @@
+services:
+  dashboard:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      # Persist cloned repos and generated reports outside the container
+      - debt_cache:/tmp
+      - ./reports:/app/reports
+    restart: unless-stopped
+
+volumes:
+  debt_cache:

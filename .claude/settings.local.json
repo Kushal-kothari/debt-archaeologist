@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(python -c \"from dotenv import load_dotenv; load_dotenv\\(\\); import os; print\\('key present:', bool\\(os.getenv\\('OPENAI_API_KEY'\\)\\)\\); from agents.commit_quality import CommitQualityAgent; from synthesis.synthesizer import SynthesisAgent; print\\('imports OK'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import main; print\\('main.py imports OK'\\)\")",
+      "Bash(python -m pytest tests/ -v --tb=short)",
+      "Bash(docker build *)",
+      "Bash(docker compose *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git remote *)",
+      "Bash(git init *)",
+      "Bash(git commit *)",
+      "Bash(git branch *)"
+    ]
+  }
+}

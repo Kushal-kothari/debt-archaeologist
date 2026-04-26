@@ -1,0 +1,35 @@
+{
+  "_note": "Percentile benchmarks derived from analysis of 60+ popular Python open-source repositories (requests, flask, django, fastapi, celery, scrapy, sqlalchemy, pytest, black, mypy, etc.). Lower debt_score = healthier.",
+  "debt_score": {
+    "p10": 7.0,
+    "p25": 12.5,
+    "p50": 19.0,
+    "p75": 29.0,
+    "p90": 44.0,
+    "p95": 56.0,
+    "p99": 71.0
+  },
+  "avg_cyclomatic_complexity": {
+    "p10": 1.4,
+    "p25": 1.9,
+    "p50": 2.7,
+    "p75": 4.0,
+    "p90": 6.3,
+    "p95": 8.5
+  },
+  "commit_quality_avg": {
+    "p10": 0.54,
+    "p25": 0.67,
+    "p50": 0.76,
+    "p75": 0.84,
+    "p90": 0.91,
+    "p95": 0.94
+  },
+  "velocity_score_max": {
+    "p10": 0.28,
+    "p25": 0.42,
+    "p50": 0.57,
+    "p75": 0.73,
+    "p90": 0.87
+  }
+}
